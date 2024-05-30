@@ -1,4 +1,4 @@
-package main.java.base;
+package base;
 
 /**
  * @author CaptainWang
