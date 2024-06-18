@@ -16,7 +16,7 @@ import java.io.IOException;
 
 public class QRCodeGenerator {
     public static void main(String[] args) {
-        String content = "https://m.piaoxingqiu.com/content/642560d172c91700014e24e3?channelId=6267a80f4c98da6cf99bd224";
+        String content = "https://m.piaoxingqiu.com/9f381ec6f837";
         int size = 400; // 设置二维码的大小
 
         try {
@@ -27,6 +27,7 @@ public class QRCodeGenerator {
             MatrixToImageWriter.writeToFile(bitMatrix, "PNG", new File("qrcode-12.png"));
             System.out.println("二维码已生成并保存到文件中。");
             QrCodeUtils.creatQRCode(content);
+            System.out.println(MD5Utils.md5(content));
         } catch (WriterException | IOException e) {
             e.printStackTrace();
         }

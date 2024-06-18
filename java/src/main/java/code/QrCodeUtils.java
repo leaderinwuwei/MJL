@@ -60,7 +60,7 @@ public class QrCodeUtils {
     public static Map<EncodeHintType, Object> qrCodeEncodeHintTypeMap() {
         Map<EncodeHintType, Object> hints = new HashMap<>();
         // 设置QR二维码的纠错级别（H为最高级别）具体级别信息
-        hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
+        hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.M);
         // 设置编码方式
         hints.put(EncodeHintType.CHARACTER_SET, "utf-8");
         // 设置间距
