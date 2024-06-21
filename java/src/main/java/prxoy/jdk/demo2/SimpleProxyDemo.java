@@ -1,4 +1,4 @@
-package prxoy.jdk;
+package prxoy.jdk.demo2;
 
 import sun.misc.ProxyGenerator;
 
@@ -51,7 +51,7 @@ interface IProxyClass {
 	 @Override
 	 public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		 //将代理对象生成字节码到F盘上，方便反编译出java文件查看，实际动态代理是不需要自己生成的
-		 addClassToDisk(proxy.getClass().getName(), ProxyClassImpl.class,"/Users/captainwang/Desktop/$Proxy0.class");
+		 addClassToDisk(proxy.getClass().getName(), ProxyClassImpl.class,"/Users/captainwang/Desktop/workSpace/javaspace/practice/MJL/java/src/main/java/prxoy/jdk/demo2/$Proxy0.class");
 	     System.out.println("method:"+method.getName());
 		 System.out.println("args:"+args[0].getClass().getName());
 		 System.out.println("Before invoke method...");

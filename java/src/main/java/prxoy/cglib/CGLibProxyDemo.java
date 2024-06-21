@@ -1,13 +1,13 @@
 package prxoy.cglib;
 
-/**
- * @author CaptainWang
- * @since 2024/6/20
- */
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 
+/**
+ * @author CaptainWang
+ * @since 2024/6/20
+ */
 public class CGLibProxyDemo {
     public static void main(String[] args) {
         Enhancer enhancer = new Enhancer();
