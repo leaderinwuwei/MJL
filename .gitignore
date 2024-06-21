@@ -3,3 +3,6 @@
 /java/target/
 /data/target/
 .DS_store
+/algorithm/target/classes/
+/spring/target/classes/
+/web/target/classes/
