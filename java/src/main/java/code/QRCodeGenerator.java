@@ -16,7 +16,7 @@ import java.io.IOException;
 
 public class QRCodeGenerator {
     public static void main(String[] args) {
-        String content = "https://m.piaoxingqiu.com/9f381ec6f837";
+        String content = "https://m.piaoxingqiu.com/?lssId=9f381ec6f837";
         int size = 400; // 设置二维码的大小
 
         try {
