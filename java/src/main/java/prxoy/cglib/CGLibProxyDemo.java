@@ -4,6 +4,8 @@ package prxoy.cglib;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 
+import java.util.concurrent.locks.LockSupport;
+
 /**
  * @author CaptainWang
  * @since 2024/6/20
@@ -21,5 +23,13 @@ public class CGLibProxyDemo {
 
         MyTarget proxy = (MyTarget) enhancer.create();
         proxy.doSomething();
+
+        while (true) {
+            LockSupport.parkNanos(30000000000000L);
+            System.out.println(" 我醒了 别管我");
+        }
     }
 }
+//prxoy.cglib.MyTarget$$EnhancerByCGLIB$$1a45594c
+//prxoy.cglib.MyTarget$$EnhancerByCGLIB$$1a45594c$$FastClassByCGLIB$$6b60ecb2
+//prxoy.cglib.MyTarget$$FastClassByCGLIB$$6b2a52b8

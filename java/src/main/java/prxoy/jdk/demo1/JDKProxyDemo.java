@@ -5,6 +5,7 @@ package prxoy.jdk.demo1;
  * @since 2024/6/20
  */
 import java.lang.reflect.*;
+import java.util.concurrent.locks.LockSupport;
 
 public class JDKProxyDemo {
     public static void main(String[] args) {
@@ -21,5 +22,10 @@ public class JDKProxyDemo {
         );
 
         proxy.doSomething();
+
+        while (true) {
+            LockSupport.parkNanos(30000000000000L);
+            System.out.println(" 我醒了 别管我");
+        }
     }
 }
