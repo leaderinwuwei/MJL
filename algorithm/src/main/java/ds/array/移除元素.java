@@ -1,4 +1,4 @@
-package array;
+package ds.array;
 
 public class 移除元素 {
 	public static int removeElement(int[] nums, int val) {

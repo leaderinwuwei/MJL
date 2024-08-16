@@ -1,4 +1,4 @@
-package array;
+package ds.array;
 
 public class 有序数组的平方{
 	public static int[] sortedSquares(int[] nums) {

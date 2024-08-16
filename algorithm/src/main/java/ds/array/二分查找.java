@@ -1,4 +1,4 @@
-package array;
+package ds.array;
 
 public class 二分查找 {
 	public static int search(int[] nums, int target) {
