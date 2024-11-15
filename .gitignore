@@ -8,4 +8,8 @@
 /web/target/classes/
 /integration/integration.iml
 /integration/target/
-   
+/web/web.iml
+/algorithm/algorithm.iml
+/data/data.iml
+/java/java.iml
+/spring/spring.iml

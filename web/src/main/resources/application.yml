@@ -1,0 +1,18 @@
+management:
+  server:
+    port: 18888
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    tags:
+      application: web # 暴露的数据中添加application label
+
+
+
+server:
+  port: 8888
