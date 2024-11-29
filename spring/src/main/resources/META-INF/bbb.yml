@@ -1,0 +1,12 @@
+server:
+  port: 8881
+apollo:
+  bootstrap:
+    enabled : true
+    namespace : application
+
+app:
+ id: SampleApp
+
+
+timeout1: 8
