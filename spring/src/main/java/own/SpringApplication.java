@@ -1,8 +1,6 @@
 package own;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import own.apollo.ApolloConfig;
 
 /**
  * @author CaptainWang
