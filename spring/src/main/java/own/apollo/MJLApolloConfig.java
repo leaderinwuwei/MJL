@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @since 2024/11/29
  */
 @Component
-public class ApolloConfig {
+public class MJLApolloConfig {
 
     @Value("${timeout:}")
     private String timeout;

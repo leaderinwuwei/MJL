@@ -1,10 +1,11 @@
 package own.web;
 
+import com.ctrip.framework.apollo.Config;
+import com.ctrip.framework.apollo.spring.annotation.ApolloConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import own.apollo.ApolloConfig;
-import own.apollo.ApolloOtherConfig;
+import own.apollo.MJLApolloConfig;
 
 /**
  * @author CaptainWang
@@ -14,8 +15,9 @@ import own.apollo.ApolloOtherConfig;
 public class ApolloController {
 
 
+
     @Autowired
-    private ApolloConfig apolloConfig;
+    private MJLApolloConfig apolloConfig;
 
 
     @GetMapping("aaa/111")
