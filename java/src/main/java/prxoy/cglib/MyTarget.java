@@ -8,4 +8,8 @@ public class MyTarget {
     public void doSomething() {
         System.out.println("Doing something in target...");
     }
+
+    public void interactDoSomething() {
+        this.doSomething();
+    }
 }

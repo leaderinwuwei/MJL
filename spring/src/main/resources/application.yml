@@ -3,7 +3,7 @@ server:
 apollo:
   bootstrap:
     enabled : true
-    namespace : application
+    namespace : application,application.system
 
 app:
  id: SampleApp

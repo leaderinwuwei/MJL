@@ -22,7 +22,7 @@ public class CGLibProxyDemo {
         });
 
         MyTarget proxy = (MyTarget) enhancer.create();
-        proxy.doSomething();
+        proxy.interactDoSomething();
 
         while (true) {
             LockSupport.parkNanos(30000000000000L);
