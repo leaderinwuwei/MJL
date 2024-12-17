@@ -23,7 +23,6 @@ import java.io.IOException;
 @EnableCaching
 public class RedisConfig extends CachingConfigurerSupport {
 
-    Logger logger = LoggerFactory.getLogger("CachingConfigurerSupport");
 
     @Override
     @Bean
