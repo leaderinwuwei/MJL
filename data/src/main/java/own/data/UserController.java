@@ -44,6 +44,9 @@ public class UserController {
 
     @RequestMapping("/ping")
     String ping() {
+        System.out.println("11111");
+        System.out.println("11111");
+        System.out.println("11111");
 
         return (String) redisTemplate.execute(releaseScript, new ArrayList(), new String[]{});
 
