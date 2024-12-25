@@ -1,5 +1,7 @@
 package spi;
 
+import own.spi.Spi;
+
 import java.util.ServiceLoader;
 
 /**

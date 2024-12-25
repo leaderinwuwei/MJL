@@ -1,6 +1,6 @@
 package spiImpl;
 
-import spi.Spi;
+import own.spi.Spi;
 
 public class SpiA implements Spi {
     public void sayHello(){

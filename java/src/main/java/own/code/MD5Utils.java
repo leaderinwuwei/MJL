@@ -1,4 +1,4 @@
-package code;
+package own.code;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;

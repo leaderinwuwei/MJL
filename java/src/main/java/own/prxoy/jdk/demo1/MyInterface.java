@@ -1,4 +1,4 @@
-package prxoy.jdk.demo1;
+package own.prxoy.jdk.demo1;
 
 /**
  * @author CaptainWang

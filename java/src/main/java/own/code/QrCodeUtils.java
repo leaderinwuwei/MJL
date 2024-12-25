@@ -1,4 +1,4 @@
-package code;
+package own.code;
 
 /**
  * @author CaptainWang

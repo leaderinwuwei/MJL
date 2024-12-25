@@ -1,4 +1,4 @@
-package spi;
+package own.spi;
 
 /**
  * @author CaptainWang

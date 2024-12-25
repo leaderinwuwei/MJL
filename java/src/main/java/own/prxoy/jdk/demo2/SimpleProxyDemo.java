@@ -1,8 +1,6 @@
-package prxoy.jdk.demo2;
+package own.prxoy.jdk.demo2;
 
 
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;

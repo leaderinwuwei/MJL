@@ -1,4 +1,4 @@
-package prxoy.cglib;
+package own.prxoy.cglib;
 
 /**
  * @author CaptainWang

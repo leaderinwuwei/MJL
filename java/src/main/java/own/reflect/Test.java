@@ -1,4 +1,4 @@
-package reflect;// v1 版本
+package own.reflect;// v1 版本
 import java.lang.reflect.Method;
 
 public class Test {

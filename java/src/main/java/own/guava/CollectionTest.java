@@ -1,4 +1,4 @@
-package base.guava;
+package own.guava;
 
 import com.google.common.collect.Maps;
 

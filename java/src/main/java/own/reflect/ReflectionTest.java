@@ -1,4 +1,4 @@
-package reflect;
+package own.reflect;
 
 import java.util.*;
 import java.lang.reflect.*;

@@ -1,4 +1,4 @@
-package jvm;
+package own.jvm;
 
 /**
  * @author CaptainWang
