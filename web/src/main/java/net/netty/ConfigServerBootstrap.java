@@ -24,7 +24,7 @@ public class ConfigServerBootstrap {
     public static final int WORKER_THREAD_COUNT = Runtime.getRuntime().availableProcessors();
     private static final Logger log = LoggerFactory.getLogger("ConfigServerBootstrap");
 
-    public void start(){
+    public void start() {
         int port = 8080;
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
         EventLoopGroup workerGroup = new NioEventLoopGroup(WORKER_THREAD_COUNT);
