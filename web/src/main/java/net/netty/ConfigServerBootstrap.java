@@ -51,7 +51,7 @@ public class ConfigServerBootstrap {
                             pipeline.addLast(new HttpObjectAggregator(50 * 1024 * 1024)); // Aggregate large messages
                             pipeline.addLast(new SimpleChannelInboundHandler<Object>() { // Custom handler
                                 @Override
-                                protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
+                                protected void channelRead0(ChannelHandlerContext ctx, Object msg) {
                                     log.info("Received: {}", msg);
                                     ctx.writeAndFlush("Response: Hello from Netty!");
                                 }
