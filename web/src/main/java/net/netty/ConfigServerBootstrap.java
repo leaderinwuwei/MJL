@@ -44,7 +44,7 @@ public class ConfigServerBootstrap {
                     .channel(NioServerSocketChannel.class)
                     .childHandler(new ChannelInitializer<Channel>() {
                         @Override
-                        protected void initChannel(Channel ch) throws Exception {
+                        protected void initChannel(Channel ch) {
                             ChannelPipeline pipeline = ch.pipeline();
                             pipeline.addLast(new IdleStateHandler(10, 10, 0)); // Idle detection
                             pipeline.addLast(new HttpServerCodec()); // HTTP codec
