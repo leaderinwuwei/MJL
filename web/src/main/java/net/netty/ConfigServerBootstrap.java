@@ -33,7 +33,7 @@ public class ConfigServerBootstrap {
     private static final Logger log = LoggerFactory.getLogger(ConfigServerBootstrap.class);
 
     public void start() {
-        int port = 8080;
+        int port = 9880;
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
         EventLoopGroup workerGroup = new NioEventLoopGroup(WORKER_THREAD_COUNT);
 
