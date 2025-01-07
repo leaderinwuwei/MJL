@@ -1,7 +1,11 @@
 /.idea/
 /output/
-/java/target/
+/algorithm/target/
 /data/target/
+/integration/target/
+/java/target/
+/spring/target/
+/web/target/
 .DS_store
 /algorithm/target/classes/
 /spring/target/classes/
