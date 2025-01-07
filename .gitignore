@@ -7,11 +7,7 @@
 /spring/target/
 /web/target/
 .DS_store
-/algorithm/target/classes/
-/spring/target/classes/
-/web/target/classes/
 /integration/integration.iml
-/integration/target/
 /web/web.iml
 /algorithm/algorithm.iml
 /data/data.iml
