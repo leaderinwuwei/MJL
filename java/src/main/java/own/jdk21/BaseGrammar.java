@@ -11,9 +11,9 @@ public class BaseGrammar {
 
     public static void main(String[] args) {
 
-        Queue queue = new LinkedList();
-        if (queue instanceof LinkedList linkedList) {
-            System.out.println(linkedList.size());
-        }
+//        Queue queue = new LinkedList();
+//        if (queue instanceof LinkedList linkedList) {
+//            System.out.println(linkedList.size());
+//        }
     }
 }
