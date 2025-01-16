@@ -72,7 +72,6 @@ public class RedisConfig extends CachingConfigurerSupport {
     }
 
     @Bean
-    @Primary // 使用@Primary确保这个配置优先被选中
     public CacheManager cacheManager(RedisConnectionFactory connectionFactory) {
         RedisCacheConfiguration config = RedisCacheConfiguration.defaultCacheConfig()
                 .serializeValuesWith(
