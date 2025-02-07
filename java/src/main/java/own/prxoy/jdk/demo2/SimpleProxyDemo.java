@@ -52,7 +52,7 @@ interface IProxyClass {
 	 @Override
 	 public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		 //将代理对象生成字节码到F盘上，方便反编译出java文件查看，实际动态代理是不需要自己生成的
-		 addClassToDisk(proxy.getClass().getName(), ProxyClassImpl.class,"/Users/captainwang/Desktop/workSpace/javaspace/practice/MJL/java/src/main/java/prxoy/jdk/demo2/$Proxy0.class");
+		 addClassToDisk(proxy.getClass().getName(), ProxyClassImpl.class,"/Users/captainwang/Desktop/workSpace/javaspace/practice/MJL/Proxy1.class");
 	     System.out.println("method:"+method.getName());
 		 System.out.println("args:"+args[0].getClass().getName());
 		 System.out.println("Before invoke method...");
@@ -67,7 +67,7 @@ interface IProxyClass {
 	  * @param cl
 	  * @param path
 	  */
-	 private void addClassToDisk(String className, Class<?> cl, String path) {
+	 public static void addClassToDisk(String className, Class<?> cl, String path) {
 		 //用于生产代理对象的字节码
 		 byte[] classFile = ProxyGenerator.generateProxyClass(className, cl.getInterfaces());
 		 FileOutputStream out = null;
@@ -87,12 +87,21 @@ interface IProxyClass {
 		 }
 	 }
 
+	 /**
+	  * 用于生产代理对象的字节码，并将其保存到硬盘上
+	  * @param className
+	  * @param cl
+	  */
+	 public static void addClassToDiskDefaultPath(String className, Class<?> cl) {
+		 addClassToDisk(className,cl,"/Users/captainwang/Desktop/workSpace/javaspace/practice/MJL/Proxy0.class");
+	 }
+
  }
 
 
 public class SimpleProxyDemo {
 	public static void main(String[] args) throws SecurityException, NoSuchMethodException {
-//		System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+		System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
 		ProxyClassImpl c = new ProxyClassImpl();
 		DynamicProxyHandler proxyHandler = new DynamicProxyHandler(c);
 		IProxyClass proxyClass = (IProxyClass)proxyHandler.newProxyInstance();
